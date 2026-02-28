@@ -2,23 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container section-padding">
-        <h2 class="text-center">Our Work</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=4" alt="Work 1"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=5" alt="Work 2"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=6" alt="Work 3"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=7" alt="Work 4"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=8" alt="Work 5"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=9" alt="Work 6"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=10" alt="Work 7"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=11" alt="Work 8"></div>
-            <div class="gallery-item"><img src="https://picsum.photos/400/400?random=12" alt="Work 9"></div>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo"><h1>PortfolioName</h1></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    </body>
+    </header>
+
+    <main>
+        <section class="page-title section-padding">
+            <div class="container"><h1>Our Work</h1></div>
+        </section>
+
+        <section class="gallery-grid-section section-padding">
+            <div class="container">
+                <div class="main-gallery-grid">
+                    <img src="images/02.jpg" alt="Work 1">
+                    <img src="images/03.jpg" alt="Work 2">
+                    <img src="images/04.jpg" alt="Work 3">
+                    <img src="images/05.jpg" alt="Work 4">
+                    <img src="images/06.jpg" alt="Work 5">
+                    <img src="images/07.jpg" alt="Work 6">
+                    <img src="images/08.jpg" alt="Work 7">
+                    <img src="images/09.jpg" alt="Work 8">
+                    <img src="images/10.jpg" alt="Work 9">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer"><div class="container text-center"><p>&copy; 2026 Portfolio Project.</p></div></footer>
+</body>
 </html>
