@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Portfolio Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="main-header">
         <div class="container header-flex">
-            <div class="logo"><h1>My<span>Portfolio</span></h1></div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+            <div class="logo">
+                <h1>PortfolioName</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -20,23 +24,79 @@
         </div>
     </header>
 
-    <section class="hero">
-        <img src="https://picsum.photos/1200/600?random=1" alt="Hero">
-        <div class="hero-content">
-            <h2>Modern Web Design</h2>
-            <p>Built with pure HTML and CSS.</p>
-            <a href="contact.html" class="btn-main">Work With Us</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide"><img src="images/02.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="images/03.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="images/04.jpg" alt="Slide 3"></div>
+            </div>
+        </section>
 
-    <section class="container section-padding">
-        <div class="grid-3">
-            <div class="card"><h3>Design</h3><p>Beautiful, custom layouts.</p></div>
-            <div class="card"><h3>Code</h3><p>Clean and valid HTML5.</p></div>
-            <div class="card"><h3>Strategy</h3><p>Results-driven approach.</p></div>
-        </div>
-    </section>
+        <section class="about-preview section-padding">
+            <div class="container flex-row">
+                <div class="content">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>This is a modern, responsive website built to showcase creative work and professional services.</p>
+                    <a href="about.html" class="btn-primary">Read More About Me</a>
+                </div>
+                <div class="image">
+                    <img src="images/05.jpg" alt="About Preview">
+                </div>
+            </div>
+        </section>
 
-    <footer class="main-footer"><p>&copy; 2024 Portfolio Project</p></footer>
+        <section class="services section-padding bg-light">
+            <div class="container">
+                <h2 class="text-center">Our Services</h2>
+                <div class="services-grid">
+                    <article class="card">
+                        <h3>Web Design</h3>
+                        <p>Creating clean and functional user interfaces.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Development</h3>
+                        <p>Building responsive sites with HTML5 and CSS3.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Strategy</h3>
+                        <p>Planning digital experiences that convert.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-preview section-padding">
+            <div class="container">
+                <h2 class="text-center">Work Gallery</h2>
+                <div class="preview-grid">
+                    <img src="images/05.jpg" alt="Work 1">
+                    <img src="images/06.jpg" alt="Work 2">
+                    <img src="images/07.jpg" alt="Work 3">
+                    <img src="images/08.jpg" alt="Work 4">
+                    <img src="images/09.jpg" alt="Work 5">
+                    <img src="images/10.jpg" alt="Work 6">
+                </div>
+                <div class="text-center" style="margin-top: 20px;">
+                    <a href="gallery.html" class="btn-secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section-padding">
+            <div class="container text-center">
+                <h2>Let's Build Something Together</h2>
+                <p>Available for freelance opportunities and collaborations.</p>
+                <a href="contact.html" class="btn-primary">Start a Conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Portfolio Project. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
