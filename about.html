@@ -2,19 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container section-padding">
-        <div class="flex-row">
-            <img src="https://picsum.photos/500/300?random=2" alt="Office">
-            <div><h2>Our Mission</h2><p>We provide high quality web solutions.</p></div>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo"><h1>PortfolioName</h1></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="flex-row-reverse" style="margin-top: 50px;">
-            <img src="https://picsum.photos/500/300?random=3" alt="Team">
-            <div><h2>Our Team</h2><p>Expert developers at your service.</p></div>
-        </div>
+    </header>
+
+    <main>
+        <section class="page-title section-padding">
+            <div class="container"><h1>About Our Creative Journey</h1></div>
+        </section>
+
+        <section class="about-split section-padding">
+            <div class="container flex-row">
+                <div class="image"><img src="images/02.jpg" alt="Our Studio"></div>
+                <div class="content">
+                    <h2>Our Vision</h2>
+                    <p>We focus on clean, modern aesthetics and functional design.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-split section-padding bg-light">
+            <div class="container flex-row-reverse">
+                <div class="image"><img src="images/03.jpg" alt="Our Process"></div>
+                <div class="content">
+                    <h2>Our Process</h2>
+                    <p>Every project is a collaboration built on strategy and creativity.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    </body>
+
+    <footer class="main-footer"><div class="container text-center"><p>&copy; 2026 Portfolio Project.</p></div></footer>
+</body>
 </html>
